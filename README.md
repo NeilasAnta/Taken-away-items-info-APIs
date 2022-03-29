@@ -1,399 +1,594 @@
-# Project: Teltonika_API
-#### Project testing start commands:
-1. composer install
-1. php artisan migrate
-1. php artisan db:seed
-1. php artisan serve
-# 📁 Collection: Admin 
-
-
-## End-point: /api/auth/admin/register
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/admin/register
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|email|lesas@gmail.com|text|
-|name|lesas|text|
-|surname|lesas|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/add
-### Method: POST
->```
->http://127.0.0.1:8000/api/inventory/admin/add
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|name|Modemas|text|
-|model|RUTX9111|text|
-|serial_number|1478521|text|
-|comment|Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/assign
-### Method: POST
->```
->http://127.0.0.1:8000/api/inventory/admin/assign
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|inventory_id|11|text|
-|user_id|9|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/unassign
-### Method: POST
->```
->http://127.0.0.1:8000/api/inventory/admin/unassign
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|inventory_id|11|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/update/{id}
-### Method: PUT
->```
->http://127.0.0.1:8000/api/inventory/admin/update/10
->```
-
-### Body x-www-form-urlencoded
-
-|Param|value|Type|
-|---|---|---|
-|name|Modemas|text|
-|model|RUTX9111|text|
-|serial_number|1478521|text|
-|comment|Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.|text|
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/delete/{id}
-### Method: DELETE
->```
->http://127.0.0.1:8000/api/inventory/admin/delete/10
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/admin/delete/{email}
-### Method: DELETE
->```
->http://127.0.0.1:8000/api/auth/admin/delete/lesas@gmail.com
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/get/{id}
-### Method: GET
->```
->http://127.0.0.1:8000/api/inventory/admin/get/9
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/show
-### Method: GET
->```
->http://127.0.0.1:8000/api/inventory/admin/show
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/admin/show?search={key}?status={assign/unassign}
-### Method: GET
->```
->http://127.0.0.1:8000/api/inventory/admin/show?search=Neilas
->```
-### Query Params
-
-|Param|value|
-|---|---|
-|search|Neilas|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3NjAxOCwiZXhwIjoxNjQ4MTc5NjE4LCJuYmYiOjE2NDgxNzYwMTgsImp0aSI6IlBjeU5NeVVuSVFWSGc4Sk4iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.y3sg1kwAvjT7-ZuDQmuWs7rPot8zLIn0EMzZhoFDL0E|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/admin/show-students
-### Method: GET
->```
->http://127.0.0.1:8000/api/auth/admin/show-students
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3OTIzMSwiZXhwIjoxNjQ4MTgyODMxLCJuYmYiOjE2NDgxNzkyMzEsImp0aSI6Ik5DMk5hTXlqcG92ZHBuUWgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.We-SGp89CGEpjT5LcOl5AolmtTCxG7AIuur0ECygp1I|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-# 📁 Collection: Student 
-
-
-## End-point: /api/inventory/student/show
-### Method: GET
->```
->http://127.0.0.1:8000/api/inventory/student/show
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/student/responsible
-### Method: GET
->```
->http://127.0.0.1:8000/api/inventory/student/responsible
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/student/assign
-### Method: POST
->```
->http://127.0.0.1:8000/api/inventory/student/assign
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|inventory_id|11|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/inventory/student/unassign
-### Method: POST
->```
->http://127.0.0.1:8000/api/inventory/student/unassign
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|inventory_id|11|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/login
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/login
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|email|n.antanavicius2000@gmail.com|text|
-|password|tuzQi6jp|text|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/logout
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/logout
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/user-profile
-### Method: GET
->```
->http://127.0.0.1:8000/api/auth/user-profile
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODE3ODE1MSwiZXhwIjoxNjQ4MTgxNzUxLCJuYmYiOjE2NDgxNzgxNTEsImp0aSI6IkJya1NyT3RlNk1UZ0NHeWoiLCJzdWIiOjgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.tvY6UFgtF50efyN5QAlt3ieDkjPxiXqSNCAbp1c7YFE|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/refresh
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/refresh
->```
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/update-password
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/update-password
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|password|aliovalio|text|
-
-
-### 🔑 Authentication bearer
-
-|Param|value|Type|
-|---|---|---|
-|token|eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4MTc4MTUxLCJleHAiOjE2NDgxODE4ODQsIm5iZiI6MTY0ODE3ODI4NCwianRpIjoiODdpb2pFTjZ4NGZqVHBIcCIsInN1YiI6OCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0F1pJhwps1RngDKCzCebVKGXNorjxfPlEi9kOmsYMMs|string|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: /api/auth/reset-password
-### Method: POST
->```
->http://127.0.0.1:8000/api/auth/reset-password
->```
-### Body formdata
-
-|Param|value|Type|
-|---|---|---|
-|email|n.antanaasdasdasdasdviasdadscius200@gmail.com|text|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-_________________________________________________
-Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
+## Laravel project Taken-away-items-info
+
+Documentation to Taken-away-items-info APIs.
+
+-   [How to run project](#how)
+-   [Dummy data](#dummy)
+-   [API methods](#api)
+    -   [Authentication](#auth)
+        -   [Login](#auth-login)
+        -   [Register](#auth-register)
+        -   [Logout](#auth-logout)
+        -   [Refresh](#auth-refresh)
+        -   [User Profile](#auth-profile)
+        -   [Update password](#auth-update)
+        -   [Reset password](#auth-reset)
+        -   [Delete student account](#auth-delete)
+    -   [Inventory](#inventory)
+        -   [Get all (User:Admin)](#inventory-all-admin)
+        -   [Get all (User:Admin) with search params](#inventory-search)
+        -   [Get by id (User:Admin)](#inventory-by-id)
+        -   [Get all (User:Student)](#inventory-all-student)
+        -   [Create Inventory (User:Admin)](#inventory-post)
+        -   [Update Inventory (User:Admin)](#inventory-put)
+        -   [Delete Inventory (User:Admin)](#inventory-delete)
+        -   [Assign Inventory (User:Admin)](#inventory-assign-admin)
+        -   [Assign Inventory (User:Student)](#inventory-assign-student)
+        -   [Unassign Inventory (User:Admin)](#inventory-unassign-admin))
+        -   [Unassign Inventory (User:Student)](#inventory-unassign-student)
+        -   [Which student responsible for inventory (User:Student)](#inventory-responsible)
+    -   [Student](#student)
+        -   [Get all students (User:Admin)](#get-all-students)
+-   [HTTP Response Codes](#responses)
+
+## <a name="how"></a>How to run project:
+
+-   Create a database locally
+-   Rename `.env.example` file to `.env`inside your project root and fill the database information and mail information.
+-   Open the console and cd your project root directory
+-   Run `composer install`
+-   Run `php artisan key:generate`
+-   Run `php artisan jwt:secret`
+-   Run `php artisan migrate`
+-   Run `php artisan db:seed` to run seeders, if any.
+-   Run `php artisan serve`
+
+#### You can now access your project at http://127.0.0.1:8000 :)
+
+### If for some reason your project stop working do these:
+
+-   `composer install`
+-   `php artisan migrate`
+
+# <a name="dummy">Dummy data
+
+Run `php artisan db:seed`
+
+Creates 1 admin user (`email = info@teltonika.lt, password = teltonika`), 2 student users(`email = n.antanavicius2000@gmail.com, password = kretinga; email = jubartas@gmail.com, password = lexus;`) and 3 invetory items.
+
+
+# <a name="api"></a>API methods
+
+## <a name="auth"></a>Authentication
+
+### <a name="auth-login">Login
+
+Access to the API is granted by providing your email and password using HTTP basic authentication.
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/login
+```
+
+#### Body parameters
+
+| Name     | Type   |
+| -------- | ------ |
+| email    | string |
+| password | string |
+
+#### Response
+
+```json
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODUxNzY4MCwiZXhwIjoxNjQ4NTIxMjgwLCJuYmYiOjE2NDg1MTc2ODAsImp0aSI6InpmQlJ5aHhBNzBWbm5ZeVYiLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.h23C3EzLAzunaLfSkYnaU5KH6gOLKM2dgpCHXgSN4E4",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "user": {
+        "id": 2,
+        "name": "Neilas",
+        "surname": "Antanavičius",
+        "email": "n.antanavicius2000@gmail.com",
+        "isAdmin": 0,
+        "created_at": null,
+        "updated_at": null
+    }
+}
+```
+
+### <a name="auth-register">Register
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/register
+```
+
+#### Body parameters
+
+| Name      | Type   |
+| --------- | ------ |
+| name      | string |
+| surname   | string |
+| email     | string |
+
+#### Response
+
+```json
+{
+    "status": "ok",
+    "message": "User successfully registered"
+}
+```
+
+### <a name="auth-logout">Logout
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/logout
+```
+#### Response
+
+```json
+{
+    "status": "ok",
+    "message": "User successfully signed out"
+}
+```
+
+### <a name="auth-refresh">Refresh
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/refresh
+```
+#### Response
+```json
+{
+    {
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9hdXRoXC9yZWZyZXNoIiwiaWF0IjoxNjQ4NTEzMjY5LCJleHAiOjE2NDg1MTY4ODUsIm5iZiI6MTY0ODUxMzI4NSwianRpIjoiNmsxZnpoYnY4RVRWZXd0ciIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.F6KfJDR647nB241qn6DmBZNlLtJc946UxnotnQJoGlQ",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "user": {
+        "id": 1,
+        "name": "Lukas",
+        "surname": "Janėnas",
+        "email": "info@teltonika.lt",
+        "isAdmin": 1,
+        "created_at": null,
+        "updated_at": null
+            }
+    }
+}
+```
+
+### <a name="auth-profile">User profile
+
+```no-highlight
+Get http://127.0.0.1:8000/api/auth/user-profile
+```
+#### Response
+```json
+    {
+        "id": 1,
+        "name": "Lukas",
+        "surname": "Janėnas",
+        "email": "info@teltonika.lt",
+        "isAdmin": 1,
+        "created_at": null,
+        "updated_at": "2022-03-29T00:32:54.000000Z"
+    }
+```
+
+### <a name="auth-update">Update password
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/update-password
+```
+
+#### Body parameters
+
+| Name      | Type   |
+| --------- | ------ |
+| password  | string |
+
+
+#### Response
+
+```json
+{
+    "status": "ok",
+    "message": "Password successfully updated"
+}
+```
+
+## <a name="auth-reset">Reset password
+
+```no-highlight
+Post http://127.0.0.1:8000/api/auth/reset-password
+```
+
+#### Body parameters
+
+| Name      | Type   |
+| --------- | ------ |
+| email     | string |
+
+
+#### Response
+
+```json
+{
+    "status": "ok",
+    "message": "Password successfully updated"
+}
+```
+
+### <a name="auth-delete">Delete student account (User:Admin)
+
+```no-highlight
+Delete http://127.0.0.1:8000/api/auth/delete/{email}
+```
+
+#### Response
+
+```json
+{
+    "status": "ok",
+    "message": "Student successfully deleted"
+}
+```
+
+## <a name="inventory">Invetory
+
+### <a name="inventory-all-admin">Get all (User:Admin)
+
+```no-highlight
+GET http://127.0.0.1:8000/api/inventory/show
+```
+
+#### Response
+
+```json
+[
+    {
+    "id": 4,
+    "user_id": null,
+    "name": "Modemas",
+    "model": "RUTX9111",
+    "serial_number": 14785211,
+    "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+    "created_at": "2022-03-29T00:42:50.000000Z",
+    "updated_at": "2022-03-29T00:42:50.000000Z",
+    "user": null
+    },
+    {
+    "id": 1,
+    "user_id": null,
+    "name": "Modem",
+    "model": "RUTX11",
+    "serial_number": 1114915382,
+    "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+    "created_at": null,
+    "updated_at": null,
+    }   
+]
+```
+
+### <a name="inventory-search">Get all (User:Admin) with search params
+
+```no-highlight
+GET http://127.0.0.1:8000/api/inventory/show?search={value}&status={assign/unassign}
+```
+
+#### Response
+
+```json
+[
+    {
+        "id": 1,
+        "user_id": 2,
+        "name": "Modem",
+        "model": "RUTX11",
+        "serial_number": 1114915382,
+        "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+        "created_at": null,
+        "updated_at": null,
+        "user": {
+            "id": 2,
+            "name": "Neilas",
+            "surname": "Antanavičius",
+            "email": "n.antanavicius2000@gmail.com",
+            "isAdmin": 0,
+            "created_at": null,
+            "updated_at": null
+        }
+    }
+]
+
+```
+
+### <a name="inventory-get-by-id">Get by id (User:Admin)
+
+```no-highlight
+GET http://127.0.0.1:8000/api/inventory/{id}
+```
+
+#### Response
+
+```json
+{
+    "id": 4,
+    "user_id": null,
+    "name": "Modemas",
+    "model": "RUTX9111",
+    "serial_number": 14785211,
+    "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+    "created_at": "2022-03-29T00:42:50.000000Z",
+    "updated_at": "2022-03-29T00:42:50.000000Z",
+    "user": null
+}
+
+```
+
+### <a name="inventory-all-student">Get all (User:Student)
+
+```no-highlight
+GET http://127.0.0.1:8000/api/inventory/show
+```
+
+#### Response
+
+```json
+[
+    {
+        "id": 2,
+        "user_id": null,
+        "name": "Modem",
+        "model": "RUTX911",
+        "serial_number": 1117915382,
+        "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+        "created_at": null,
+        "updated_at": "2022-03-29T01:18:42.000000Z",
+        "user": null
+    },
+    {
+        "id": 4,
+        "user_id": null,
+        "name": "Modemas",
+        "model": "RUTX9111",
+        "serial_number": 14785211,
+        "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+        "created_at": "2022-03-29T00:42:50.000000Z",
+        "updated_at": "2022-03-29T00:42:50.000000Z",
+        "user": null
+    }
+]
+```
+
+### <a name="inventory-post">Create Inventory (User:Admin)
+
+```no-highlight
+Post http://127.0.0.1:8000/api/inventory
+```
+
+#### Body parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| name           | string |
+| model          | string |
+| serial_number  | integer|
+| comment        | string |
+
+
+#### Response
+
+```json
+
+   {
+    "status": "ok",
+    "message": "Product successfully stored"
+   }
+
+```
+
+### <a name="inventory-put">Update Inventory (User:Admin)
+
+```no-highlight
+Put http://127.0.0.1:8000/api/inventory/{id}
+```
+
+#### x-www-form-urlencoded parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| name           | string |
+| model          | string |
+| serial_number  | integer|
+| comment        | string |
+
+
+#### Response
+
+```json
+   {
+    "status": "ok",
+    "message": "Product successfully updated"
+   }
+```
+
+### <a name="inventory-delete">Delete Inventory (User:Admin)
+
+```no-highlight
+Delete http://127.0.0.1:8000/api/inventory/{id}
+```
+
+#### Response
+
+```json
+   {
+    "status": "ok",
+    "message": "Product successfully deleted"
+   }
+```
+
+### <a name="inventory-assign-admin">Assign Inventory (User:Admin)
+
+```no-highlight
+Post http://127.0.0.1:8000/api/inventory/assign
+```
+
+#### Body parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| inventory_id   | int    |
+| user_id        | int    |
+
+
+#### Response
+
+```json
+
+   {
+    "status": "ok",
+    "message": "Successfully assigned inventory"
+   }
+
+```
+### <a name="inventory-assign-student">Assign Inventory (User:Student)
+
+```no-highlight
+Post http://127.0.0.1:8000/api/inventory/assign
+```
+
+#### Body parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| inventory_id   | int    |
+
+
+#### Response
+
+```json
+
+   {
+    "status": "ok",
+    "message": "Successfully assigned inventory"
+   }
+
+```
+
+### <a name="inventory-unassign-admin">Unassign Inventory (User:Admin)
+
+```no-highlight
+Post http://127.0.0.1:8000/api/inventory/unassign
+```
+
+#### Body parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| inventory_id   | int    |
+
+
+
+#### Response
+
+```json
+
+   {
+    "status": "ok",
+    "message": "Successfully unassigned inventory"
+   }
+
+```
+
+### <a name="inventory-unassign-student">Unassign Inventory (User:Student)
+
+```no-highlight
+Post http://127.0.0.1:8000/api/inventory/unassign
+```
+
+#### Body parameters
+
+| Name           | Type   |
+| ---------------| ------ |
+| inventory_id   | int    |
+
+
+#### Response
+
+```json
+
+   {
+    "status": "ok",
+    "message": "Successfully unassigned inventory"
+   }
+
+```
+
+### <a name="inventory-responsible">Which student responsible for inventory (User:Student)
+
+```no-highlight
+Get http://127.0.0.1:8000/api/inventory/responsible
+```
+
+#### Response
+
+```json
+[
+    {
+        "id": 1,
+        "user_id": 2,
+        "name": "Modem",
+        "model": "RUTX11",
+        "serial_number": 1114915382,
+        "comment": "Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.",
+        "created_at": null,
+        "updated_at": null,
+        "user": {
+            "id": 2,
+            "name": "Neilas",
+            "surname": "Antanavičius",
+            "email": "n.antanavicius2000@gmail.com",
+            "isAdmin": 0,
+            "created_at": null,
+            "updated_at": null
+        }
+    }
+]
+
+```
+
+## <a name="student"></a>Student
+
+### <a name="get-all-students">Get all students (User:Admin)
+```no-highlight
+Get http://127.0.0.1:8000/api/auth/show-students
+```
+
+
+#### Response
+
+```json
+
+[
+{
+    "id": 2,
+    "name": "Neilas",
+    "surname": "Antanavičius",
+    "email": "n.antanavicius2000@gmail.com",
+    "isAdmin": 0,
+    "created_at": null,
+    "updated_at": null
+}
+]
+
+```
+
+
+## <a name="responses"></a>HTTP Response Codes
+
+Each response will be returned with one of the following HTTP status codes:
+
+-   `200` `OK` The request was successful
+-   `400` `Bad Request` There was a problem with the request (security, malformed, data validation, etc.)
+-   `404` `Not found` An attempt was made to access a resource that does not exist in the API
