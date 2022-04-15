@@ -20,6 +20,8 @@ class InventorySeeder extends Seeder
             'model' => 'RUTX11',
             'serial_number' => '1114915382',
             'comment' => 'Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('inventories')->insert([
@@ -28,6 +30,8 @@ class InventorySeeder extends Seeder
             'model' => 'RUTX911',
             'serial_number' => '1117915382',
             'comment' => 'Šis gaminys yra supakeistu GSM modeliu. Gaminys neturi korpuso.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
     }
 }

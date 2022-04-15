@@ -19,7 +19,9 @@ class StudentSeeder extends Seeder
             'surname' => 'Antanavičius',
             'email' => 'n.antanavicius2000@gmail.com',
             'password' => bcrypt('kretinga'),
-            'isAdmin' => false
+            'isAdmin' => false,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('users')->insert([
@@ -27,7 +29,9 @@ class StudentSeeder extends Seeder
             'surname' => 'Ubartas',
             'email' => 'jubartas@gmail.com',
             'password' => bcrypt('lexus'),
-            'isAdmin' => false
+            'isAdmin' => false,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
     }
 }

@@ -12,9 +12,10 @@ use Illuminate\Support\Facades\Validator;
 class AssignmentController extends Controller
 {
     //
-    public function assignInventory(Request $request)
+    public function assignInventory(Request $request, $user_id=0)
     {
         $data = $request->all();
+        $data['user_id'] = $user_id;
         $userType = auth()->user()->isAdmin;
         $userData = auth()->user();
 

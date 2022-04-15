@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\InvetoryRequest;
 use App\Models\Inventory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -9,7 +10,7 @@ use Illuminate\Validation\Rule;
 
 class InventoryController extends Controller
 {
-    public function show()
+    public function index()
     {
         if(auth()->user()->isAdmin)
         {

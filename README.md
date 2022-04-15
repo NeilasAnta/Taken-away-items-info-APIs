@@ -222,7 +222,7 @@ Post http://127.0.0.1:8000/api/auth/reset-password
 ### <a name="auth-delete">Delete student account (User:Admin)
 
 ```no-highlight
-Delete http://127.0.0.1:8000/api/auth/delete/{email}
+Delete http://127.0.0.1:8000/api/auth/{id}
 ```
 
 #### Response
@@ -239,7 +239,7 @@ Delete http://127.0.0.1:8000/api/auth/delete/{email}
 ### <a name="inventory-all-admin">Get all (User:Admin)
 
 ```no-highlight
-GET http://127.0.0.1:8000/api/inventory/show
+GET http://127.0.0.1:8000/api/inventory/index
 ```
 
 #### Response
@@ -273,7 +273,7 @@ GET http://127.0.0.1:8000/api/inventory/show
 ### <a name="inventory-search">Get all (User:Admin) with search params
 
 ```no-highlight
-GET http://127.0.0.1:8000/api/inventory/show?search={value}&status={assign/unassign}
+GET http://127.0.0.1:8000/api/inventory/index?search={value}&status={assign/unassign}
 ```
 
 #### Response
@@ -329,7 +329,7 @@ GET http://127.0.0.1:8000/api/inventory/{id}
 ### <a name="inventory-all-student">Get all (User:Student)
 
 ```no-highlight
-GET http://127.0.0.1:8000/api/inventory/show
+GET http://127.0.0.1:8000/api/inventory/index
 ```
 
 #### Response
@@ -431,7 +431,7 @@ Delete http://127.0.0.1:8000/api/inventory/{id}
 ### <a name="inventory-assign-admin">Assign Inventory (User:Admin)
 
 ```no-highlight
-Post http://127.0.0.1:8000/api/inventory/assign
+Post http://127.0.0.1:8000/api/inventory/{user_id}/assign
 ```
 
 #### Body parameters
@@ -439,7 +439,6 @@ Post http://127.0.0.1:8000/api/inventory/assign
 | Name           | Type   |
 | ---------------| ------ |
 | inventory_id   | int    |
-| user_id        | int    |
 
 
 #### Response
@@ -479,10 +478,10 @@ Post http://127.0.0.1:8000/api/inventory/assign
 ### <a name="inventory-unassign-admin">Unassign Inventory (User:Admin)
 
 ```no-highlight
-Post http://127.0.0.1:8000/api/inventory/unassign
+Put http://127.0.0.1:8000/api/inventory/unassign
 ```
 
-#### Body parameters
+#### X-WWW-FORM-URLECODED
 
 | Name           | Type   |
 | ---------------| ------ |
@@ -504,10 +503,10 @@ Post http://127.0.0.1:8000/api/inventory/unassign
 ### <a name="inventory-unassign-student">Unassign Inventory (User:Student)
 
 ```no-highlight
-Post http://127.0.0.1:8000/api/inventory/unassign
+Put http://127.0.0.1:8000/api/inventory/unassign
 ```
 
-#### Body parameters
+#### X-WWW-FORM-URLECODED
 
 | Name           | Type   |
 | ---------------| ------ |

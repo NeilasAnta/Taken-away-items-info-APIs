@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 
 class Inventory extends Model
 {
@@ -13,6 +15,8 @@ class Inventory extends Model
     protected $guarded = [];
 
     protected  $with = ['user'];
+
+    public $timestamps = true;
 
     public function scopeFilter($query, array $filters) //Post::newQuery()->filter()
     {

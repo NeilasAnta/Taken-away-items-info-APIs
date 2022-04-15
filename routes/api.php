@@ -27,10 +27,10 @@ Route::middleware(['auth.jwt'])->group(function () {
     Route::post('/auth/refresh', [AuthController::class, 'refresh']);
     Route::post('/auth/update-password', [AuthController::class, 'updatePassword']);
 
-    Route::get('/inventory/show', [InventoryController::class, 'show']);
+    Route::get('/inventory/index', [InventoryController::class, 'index']);
     Route::get('/inventory/responsible', [StudentController::class, 'showResponsibleInventory']);
     Route::post('/inventory/assign', [AssignmentController::class, 'assignInventory']);
-    Route::post('/inventory/unassign', [AssignmentController::class, 'unassignInventory']);
+    Route::put('/inventory/unassign', [AssignmentController::class, 'unassignInventory']);
 
 });
 
@@ -40,10 +40,11 @@ Route::middleware(['auth.jwt', 'admin'])->group(function () {
     Route::put('/inventory/{id}', [InventoryController::class, 'update']);
     Route::delete('/inventory/{id}', [InventoryController::class, 'delete']);
 
+    Route::post('/inventory/{user_id}/assign', [AssignmentController::class, 'assignInventory']);
     Route::post('/auth/register', [AuthController::class, 'register']);
-    Route::delete('/auth/delete/{email}', [AuthController::class, 'delete']);
+    Route::delete('/auth/{id}', [AuthController::class, 'delete']);
 
-    Route::get('/auth/show-students', [StudentController::class, 'showAllStudents']);
+    Route::get('/auth/index', [StudentController::class, 'showAllStudents']);
 });
 
 

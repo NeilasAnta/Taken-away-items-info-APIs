@@ -148,23 +148,28 @@ class AuthController extends Controller
 
     }
 
-    public function delete($email)
+    public function delete($id)
     {
-        $user = User::whereEmail($email)->first();
-        if($user == null)
-        {
+        $user = User::find($id);
+        if($user == null) {
             return response()->json([
                 'status'  => 'error',
                 'message' => 'User does not exist'
             ], 422);
         }
 
-        $inventory = Inventory::where('user_id', $user['id'])->first();
-        if($inventory != null)
-        {
+        $inventory = Inventory::where('user_id', $id)->first();
+        if($inventory != null) {
             return response()->json([
                 'status'  => 'error',
                 'message' => 'The student has taken inventory and not give up'
+            ], 400);
+        }
+
+        if($user->isAdmin) {
+            return response()->json([
+                'status'  => 'error',
+                'message' => 'Can not delete Admin account.'
             ], 400);
         }
 

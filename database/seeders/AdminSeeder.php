@@ -19,7 +19,9 @@ class AdminSeeder extends Seeder
             'surname' => 'Janėnas',
             'email' => 'info@teltonika.lt',
             'password' => bcrypt('teltonika'),
-            'isAdmin' => true
+            'isAdmin' => true,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
         ]);
     }
 }
