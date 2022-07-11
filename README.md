@@ -86,8 +86,8 @@ Post http://127.0.0.1:8000/api/auth/login
     "user": {
         "id": 2,
         "name": "Neilas",
-        "surname": "Antanavičius",
-        "email": "n.antanavicius2000@gmail.com",
+        "surname": "Antana",
+        "email": "n.antan@gmail.com",
         "isAdmin": 0,
         "created_at": null,
         "updated_at": null
@@ -147,8 +147,8 @@ Post http://127.0.0.1:8000/api/auth/refresh
     "user": {
         "id": 1,
         "name": "Lukas",
-        "surname": "Janėnas",
-        "email": "info@teltonika.lt",
+        "surname": "Asd",
+        "email": "asd@asd.lt",
         "isAdmin": 1,
         "created_at": null,
         "updated_at": null
@@ -167,8 +167,8 @@ Get http://127.0.0.1:8000/api/auth/user-profile
     {
         "id": 1,
         "name": "Lukas",
-        "surname": "Janėnas",
-        "email": "info@teltonika.lt",
+        "surname": "Asd",
+        "email": "asd@asd.lt",
         "isAdmin": 1,
         "created_at": null,
         "updated_at": "2022-03-29T00:32:54.000000Z"
@@ -292,8 +292,8 @@ GET http://127.0.0.1:8000/api/inventory/index?search={value}&status={assign/unas
         "user": {
             "id": 2,
             "name": "Neilas",
-            "surname": "Antanavičius",
-            "email": "n.antanavicius2000@gmail.com",
+            "surname": "Antana",
+            "email": "n.antana@gmail.com",
             "isAdmin": 0,
             "created_at": null,
             "updated_at": null
@@ -546,8 +546,8 @@ Get http://127.0.0.1:8000/api/inventory/responsible
         "user": {
             "id": 2,
             "name": "Neilas",
-            "surname": "Antanavičius",
-            "email": "n.antanavicius2000@gmail.com",
+            "surname": "Antana",
+            "email": "n.antanagmail.com",
             "isAdmin": 0,
             "created_at": null,
             "updated_at": null
@@ -573,8 +573,8 @@ Get http://127.0.0.1:8000/api/auth/show-students
 {
     "id": 2,
     "name": "Neilas",
-    "surname": "Antanavičius",
-    "email": "n.antanavicius2000@gmail.com",
+    "surname": "Antana",
+    "email": "n.antana@gmail.com",
     "isAdmin": 0,
     "created_at": null,
     "updated_at": null
